@@ -1,0 +1,118 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  main {
+    
+  }
+
+  #main-div {
+    background-color: lightyellow;
+    background-image: url("https://i.postimg.cc/Gps2kRSN/golden-wheat-field.jpg");
+    background-size: cover;
+    
+    display: grid;
+    grid-template-rows: 12% 80% 8%;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-areas:
+      ". header header header ."
+      "left-bar left center right right-bar"
+      ". footer footer footer .";
+    grid-gap: 1%;
+    justify-items: stretch;
+    align-items: center;
+    }
+
+  header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: center;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 3vw;
+    background-color: transparent;
+    margin-bottom: -25px;    
+  }
+
+  #subtitle {
+    text-align: center;
+    font-size: 1.3vw;
+    bagkground-color: orange;
+    font-family: 'Caveat', cursive;
+    padding-top: -40px;
+    
+    
+  }
+
+  #img-div{
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+  }
+
+  #image {
+    margin: auto;
+    border-color: darkred;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    
+    box-shadow: 5px 8px 30px rgba(0,0,0,0.50);
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.80);
+  }
+
+  #img-caption {
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 550;
+    grid-area: center;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.80);
+  }
+
+  #tribute-info {
+    grid-area: left;
+    font-size: 1.5rem;
+    align-self: start;
+    margin: 1rem;
+  }
+
+  #tribute-info2 {
+    grid-area: right;
+    font-size: 1.5rem;
+    align-self: start;
+    margin: 1rem;
+  }
+
+  li {
+    margin: 1rem;
+  }
+ 
+  hr {
+    border-color: black;
+  }
+
+  #quote {
+  text-align: center;
+  }
+
+  footer {
+    grid-area: footer;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+}
+</style>
